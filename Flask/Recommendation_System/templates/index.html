@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Recommendations</title>
+</head>
+<body>
+    <h1>Movie Recommendations</h1>
+    
+    <form method="post" action="/recommend">
+        <label for="user_id">Enter Input:</label>
+        <input type="number" id="user_id" name="user_id" required>
+        
+        <label for="method">Select Recommendation Method:</label>
+        <select id="method" name="method">
+            <option value="similarity">Similarity</option>
+            <option value="dl">Deep Learning</option>
+        </select>
+        
+        <button type="submit">Get Recommendations</button>
+    </form>
+    
+    {% if recommendations %}
+    <h2>Recommended Movies:</h2>
+    <ul>
+        {% for movie_id in recommendations %}
+        <li>{{ movie_id }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Recommender</title>
+</head>
+<body>
+    <h1>Welcome to the Movie Recommender!</h1>
+    <form action="/recommendations" method="post">
+        <label for="user_id">User ID:</label>
+        <input type="text" id="user_id" name="user_id">
+        <br>
+        <label for="recommendation_type">Recommendation Type:</label>
+        <select id="recommendation_type" name="recommendation_type">
+            <option value="nlp">NLP Recommendations</option>
+            <option value="dl">Deep Learning Recommendations</option>
+        </select>
+        <br>
+        <label for="movie_id">Movie ID (for NLP):</label>
+        <input type="text" id="movie_id" name="movie_id">
+        <br>
+        <input type="submit" value="Get Recommendations">
+    </form>
+</body>
+</html> -->

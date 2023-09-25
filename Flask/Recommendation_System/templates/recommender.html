@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Recommendations</title>
+</head>
+<body>
+    <h2>Movie Recommendations</h2>
+    {% if user_id %}
+        <h3>Recommendations for User ID {{ user_id }}</h3>
+    {% elif movie_id %}
+        <h3>Recommendations based on Movie ID {{ movie_id }}</h3>
+    {% endif %}
+    <ul>
+        {% for recommendation in recommendations %}
+            <li>{{ recommendation }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

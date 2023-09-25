@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommended Items</title>
+</head>
+<body>
+    <h1>Recommended Items for "{{ selected_item.Title }}"</h1>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Item ID</th>
+        </tr>
+        {% for item in recommended_items %}
+            <tr>
+                <td>{{ item.Title }}</td>
+                <td>{{ item["Item ID"] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Back to Home</a>
+</body>
+</html>

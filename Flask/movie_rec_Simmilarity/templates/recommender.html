@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Recommendations</title>
+</head>
+<body>
+    {% if error_message %}
+        <p>{{ error_message }}</p>
+    {% else %}
+        <h2>Recommended Movies:</h2>
+        <ul>
+            {% for movie in recommended_movies %}
+                <li>Movie ID: {{ movie['movieId'] }} - Title: {{ movie['original_title'] }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
