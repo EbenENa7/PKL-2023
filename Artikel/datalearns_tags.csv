@@ -1,0 +1,26 @@
+nid,title,topic_name,tag_name,field_tags_target_id,field_topic_target_id
+12,Mengenal Machine Learning,Machine Learning,Article,11,120.0
+69,Mengenal Feature Selection dalam Machine Learning,Machine Learning,Article,11,120.0
+71,Feature Selection Menggunakan Scikit-learn,Pandas,Article,11,124.0
+190,"Analisis Time Series, Definisi, Pola dan Algoritma",Timeseries,Article,11,112.0
+191,13 Python Package Populer untuk Analisis Time Series,Python,Article,11,85.0
+201,Deteksi Stasioneritas Dalam Time Series,Timeseries,Article,11,112.0
+202,"Perjalanan Artificial Neural Network, Dari Perceptron ke Deep Learning",AI,Article,11,109.0
+212,HGrid247 Data Engineering,HGridDE,Article,11,122.0
+233,Yuk Mengenal Apache Spark,Spark,Article,11,83.0
+244,30 Tools Generative AI Tahun 2023,AI,Article,11,109.0
+263,Inovasi Masa Depan: Ide Bisnis AI untuk Startup yang Menjanjikan,AI,Article,11,109.0
+14,Hadoop Benchmarking,Hadoop,Tutorial,12,123.0
+15,Penggunaan User Impersonation pada Apache Zeppelin,Zeppelin,Tutorial,12,119.0
+43,Instalasi Git Bash Pada Windows,git,Tutorial,12,126.0
+221,Fitur Reverse Engineering pada HGrid247 DE,HGridDE,Tutorial,12,122.0
+235,"Belajar PySpark - Select, Filter dan Where Pada DataFrame",Spark,Tutorial,12,83.0
+236,Belajar Apache Spark Dengan Python : Mengenal DataFrame,Pyspark,Tutorial,12,84.0
+237,Belajar PySpark - Transformasi DataFrame dengan withColumn,Pyspark,Tutorial,12,84.0
+238,Belajar PySpark - Transformasi Dataframe dengan When-Otherwise,Pyspark,Tutorial,12,84.0
+245,Belajar PySpark - SQL pada Dataframe dengan expr(),Pyspark,Tutorial,12,84.0
+246,Belajar PySpark - GroupBy dan Agregasi,Pyspark,Tutorial,12,84.0
+247,Belajar PySpark - Join Dataframe,Pyspark,Tutorial,12,84.0
+16,"Invalid configuration of tez jars, tez.lib.uris is not defined in the configuration",Zeppelin,Knowledge Base,13,119.0
+17,"local class incompatible: stream classdesc serialVersionUID = 2, local class serialVersionUID = 3",Zeppelin,Knowledge Base,13,119.0
+13,Instalasi Hadoop 3.2.2 pada Windows 10 WSL,Hadoop,Student Work,14,123.0
