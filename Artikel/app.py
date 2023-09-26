@@ -13,6 +13,8 @@ grouped_data = data.groupby('nid')['topic_name'].agg(', '.join).reset_index()
 data = data.merge(grouped_data, on='nid', suffixes=('', '_grouped'))
 data = data.drop_duplicates(subset='title').reset_index(drop=True)
 
+data['features'] = data['title'].str.lower() +' '+ data['topic_name_grouped'].str.lower() +' '+ data['tag_name'].str.lower()
+
 def remove_punctuation(text):
     if isinstance(text, str):
         translator = str.maketrans('', '', string.punctuation)
